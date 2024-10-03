@@ -253,6 +253,13 @@
         element.classList.add("selected");
       };
 
+      const propmp = document.querySelector("#ar-prompt");
+      propmp.addEventListener("afterxrselect", () => {
+        setTimeout(() => {
+          propmp.style.display = "none";
+        }, 5000);
+      });
+
       document
         .querySelector(".slider")
         .addEventListener("beforexrselect", (ev) => {
